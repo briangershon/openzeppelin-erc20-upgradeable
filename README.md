@@ -40,8 +40,8 @@ Install dependencies and run tests to make sure things are working.
 
 For first-time setup after creating your repo based on this template, you'll want to rename the contract. Follow these steps:
 
--   Rename `MyNFTCollection.sol` to the contract name of your choice.
--   Search-and-replace `MyNFTCollection` throughout the code base.
+-   Rename `MyToken.sol` to the contract name of your choice.
+-   Search-and-replace `MyToken` throughout the code base.
 -   You'll probably want to make some changes to `README.md` to make this your own.
 
 Now, try running the tests again and make sure everything is working.
@@ -138,7 +138,7 @@ Now that you've connected to your contract above via `hardhat console`, let's pl
 // - if you're interacting with a contract on testnet or mainnet and you should see your public wallet account (the match for your private key in your `.env` file)
 await ethers.provider.listAccounts();
 
-const Contract = await ethers.getContractFactory('MyNFTCollection');
+const Contract = await ethers.getContractFactory('MyToken');
 const contract = await Contract.attach('<proxy contract address goes here>');
 await contract.setMintPrice('1000000000000000');   // this wei represents 0.001 whole coin (e.g. ETH or MATIC)
 // you'll need to wait a bit until value is stored on the blockchain before retrieving in next step
