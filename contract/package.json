@@ -1,5 +1,5 @@
 {
-    "name": "openzeppelin-erc721-upgradeable",
+    "name": "openzeppelin-erc20-upgradeable",
     "version": "1.0.0",
     "description": "",
     "main": "index.js",

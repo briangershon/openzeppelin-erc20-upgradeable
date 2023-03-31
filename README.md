@@ -1,8 +1,8 @@
-# openzeppelin-erc721-upgradeable
+# openzeppelin-erc20-upgradeable
 
-![Solidity tests](https://github.com/briangershon/openzeppelin-erc721-upgradeable/actions/workflows/continuous-integration.yaml/badge.svg)
+![Solidity tests](https://github.com/briangershon/openzeppelin-erc20-upgradeable/actions/workflows/continuous-integration.yaml/badge.svg)
 
-Develop, test and deploy an upgradeable NFT contract based on OpenZeppelin ERC721 Solidity framework and Hardhat development environment. Deploy to any EVM blockchain.
+Develop, test and deploy an upgradeable ERC-20 contract based on OpenZeppelin Solidity framework and Hardhat development environment. Deploy to any EVM blockchain.
 
 Use as a starter template for new projects.
 
@@ -149,11 +149,3 @@ const owner = (await ethers.provider.listAccounts())[0];
 await contract.mintItem(owner, {value: '1000000000000000'});
 await contract.ownerOf(1);
 ```
-
-## Check out your NFT on OpenSea
-
-Head over to Etherscan or Polygonscan, find your `CONTRACT_ADDRESS`, click "contact" then "write", and run the `mintItem` function to mint a new NFT. Use `0.001` for price (has to be >= mintPrice) and the public wallet address of who will be getting the NFT.
-
-If deployed on Polygon's Mumbai (testnet) you can view by going to https://testnets.opensea.io/assets and filter by MUMBAI chain. You'll see your NFT. Here's an example [query](https://testnets.opensea.io/assets?search[chains][0]=MUMBAI&search[query]=0xc858C56F9137aEA2508474AA17658dE460Febb7d&search[resultModel]=ASSETS).
-
-Which then has a link to the "Unidentified contract - 2l2TWfgZSS" OpenSea collection at https://testnets.opensea.io/collection/unidentified-contract-2l2twfgzss
